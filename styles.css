@@ -1,0 +1,127 @@
+/* Reset some default styles and apply a box-sizing rule for easier dimension calculations */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Apply a consistent base font-size for the document */
+html {
+    font-size: 100%; /* typically 16px */
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+/* Style the header */
+header {
+    background-color: #003366; /* dark blue */
+    color: white;
+    padding: 1em 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: #003366; /* dark blue */
+    padding: 0.5em 0; /* spacing above and below the links */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #005580; /* lighter blue */
+}
+
+/* Background image area */
+.main-image {
+    height: 300px; /* or desired height */
+    background: url('path-to-your-coast-image.jpg') no-repeat center center/cover;
+}
+
+/* Style the main content area */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    color: #003366; /* dark blue */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #003366; /* dark blue */
+    margin-bottom: 20px;
+}
+
+/* Style the form */
+form {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #003366; /* dark blue */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #003366; /* dark blue */
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005580; /* lighter blue */
+    transition: background-color 0.3s;
+}
+
+/* Footer styles */
+footer {
+    background-color: #003366; /* dark blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+}
